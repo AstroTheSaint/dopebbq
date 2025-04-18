@@ -2,27 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 import { Button } from '@/components/ui/Button'
 
-const teamMembers = [
-  {
-    name: 'John Smith',
-    role: 'Founder & BBQ Master',
-    bio: 'With over 15 years of experience in the culinary world, John brings his passion for BBQ and community building to every Dope BBQ event.',
-    image: '/images/team/john.jpg',
-  },
-  {
-    name: 'Sarah Johnson',
-    role: 'Event Director',
-    bio: 'Sarah ensures every Dope BBQ event runs smoothly, bringing her expertise in event management and community engagement.',
-    image: '/images/team/sarah.jpg',
-  },
-  {
-    name: 'Michael Chen',
-    role: 'Music Curator',
-    bio: 'Michael curates the perfect soundtrack for our events, bringing together local artists and creating unforgettable musical experiences.',
-    image: '/images/team/michael.jpg',
-  },
-]
-
 const AboutPage = () => {
   return (
     <div className="py-12">
@@ -33,7 +12,7 @@ const AboutPage = () => {
             Our Story
           </h1>
           <p className="text-xl text-bbq-grey max-w-3xl mx-auto">
-            Dope BBQ started as a simple idea: bring people together through the universal language of food and music. What began as a small gathering of friends has grown into NYC's premier community experience.
+            For over a decade, Dope BBQ has been bringing people together through the universal languages of music, food, and good vibes. What started as a simple gathering has evolved into NYC's most authentic community experience.
           </p>
         </div>
 
@@ -42,7 +21,7 @@ const AboutPage = () => {
           <div className="relative h-96 rounded-lg overflow-hidden">
             <Image
               src="/images/about/mission.jpg"
-              alt="Dope BBQ Mission"
+              alt="Dope BBQ Community"
               fill
               className="object-cover"
             />
@@ -52,10 +31,10 @@ const AboutPage = () => {
               Our Mission
             </h2>
             <p className="text-bbq-grey mb-6">
-              At Dope BBQ, we believe in the power of community. Our mission is to create spaces where people can connect, share stories, and build lasting relationships over delicious food and incredible music.
+              At Dope BBQ, we believe that great food and music have the power to transcend differences and create lasting connections. Our mission is to build bridges between communities, celebrating the diversity that makes NYC special while creating spaces where everyone feels welcome.
             </p>
             <p className="text-bbq-grey mb-6">
-              We're more than just a BBQ event – we're a movement that celebrates diversity, creativity, and the spirit of togetherness that makes NYC special.
+              Whether you're a longtime New Yorker or just visiting, whether you're a foodie or a music lover, Dope BBQ is your home. We're more than just an event – we're a movement that celebrates the universal joy of coming together.
             </p>
             <Button
               asChild
@@ -67,41 +46,10 @@ const AboutPage = () => {
           </div>
         </div>
 
-        {/* Team Section */}
-        <div className="mb-20">
-          <h2 className="text-3xl font-display text-bbq-grey-dark text-center mb-12">
-            Meet the Team
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {teamMembers.map((member) => (
-              <div
-                key={member.name}
-                className="bg-white rounded-lg shadow-md overflow-hidden"
-              >
-                <div className="relative h-64">
-                  <Image
-                    src={member.image}
-                    alt={member.name}
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className="text-xl font-display text-bbq-grey-dark mb-2">
-                    {member.name}
-                  </h3>
-                  <p className="text-bbq-red mb-4">{member.role}</p>
-                  <p className="text-bbq-grey">{member.bio}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Values Section */}
+        {/* Core Values Section */}
         <div className="bg-bbq-grey-dark text-white rounded-lg p-12 mb-20">
           <h2 className="text-3xl font-display text-center mb-12">
-            Our Values
+            What We Stand For
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
@@ -120,9 +68,9 @@ const AboutPage = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-display mb-4">Community</h3>
+              <h3 className="text-xl font-display mb-4">Community First</h3>
               <p className="text-gray-300">
-                Building meaningful connections through shared experiences
+                Creating spaces where everyone feels welcome, regardless of background
               </p>
             </div>
             <div className="text-center">
@@ -141,9 +89,9 @@ const AboutPage = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-display mb-4">Quality</h3>
+              <h3 className="text-xl font-display mb-4">Authentic Experience</h3>
               <p className="text-gray-300">
-                Delivering exceptional food, music, and experiences
+                Delivering genuine moments through food, music, and connection
               </p>
             </div>
             <div className="text-center">
@@ -162,9 +110,81 @@ const AboutPage = () => {
                   />
                 </svg>
               </div>
-              <h3 className="text-xl font-display mb-4">Passion</h3>
+              <h3 className="text-xl font-display mb-4">Lasting Impact</h3>
               <p className="text-gray-300">
-                Pouring our hearts into every event we create
+                Building memories and connections that extend beyond our events
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Experience Section */}
+        <div className="mb-20">
+          <h2 className="text-3xl font-display text-bbq-grey-dark text-center mb-12">
+            The Dope BBQ Experience
+          </h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="text-center p-6 bg-white rounded-lg shadow-md">
+              <div className="w-16 h-16 bg-bbq-red rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg
+                  className="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12zm-7 4h14M5 12a2 2 0 110-4h14a2 2 0 110 4M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-display mb-4">Incredible Food</h3>
+              <p className="text-bbq-grey">
+                From perfectly smoked meats to creative sides, our chefs craft memorable culinary experiences
+              </p>
+            </div>
+            <div className="text-center p-6 bg-white rounded-lg shadow-md">
+              <div className="w-16 h-16 bg-bbq-red rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg
+                  className="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 19V6l12-3v13M9 19c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zm12-3c0 1.105-1.343 2-3 2s-3-.895-3-2 1.343-2 3-2 3 .895 3 2zM9 10l12-3"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-display mb-4">Amazing Music</h3>
+              <p className="text-bbq-grey">
+                Live performances that bring energy and create the perfect soundtrack for connection
+              </p>
+            </div>
+            <div className="text-center p-6 bg-white rounded-lg shadow-md">
+              <div className="w-16 h-16 bg-bbq-red rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg
+                  className="w-8 h-8 text-white"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                  />
+                </svg>
+              </div>
+              <h3 className="text-xl font-display mb-4">Good Vibes</h3>
+              <p className="text-bbq-grey">
+                A welcoming atmosphere where strangers become friends and memories are made
               </p>
             </div>
           </div>
