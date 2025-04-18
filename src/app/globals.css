@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-body: 'Inter', sans-serif;
+    --font-display: 'Playfair Display', serif;
+  }
+
+  body {
+    @apply bg-white text-bbq-grey-dark;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-bbq-red text-white hover:bg-bbq-red-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-bbq-red;
+  }
+
+  .btn-secondary {
+    @apply bg-bbq-grey text-white hover:bg-bbq-grey-light focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-bbq-grey;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} 
