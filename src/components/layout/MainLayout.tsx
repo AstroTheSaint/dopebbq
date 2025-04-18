@@ -100,36 +100,19 @@ const MainLayout = ({ children }: { children: React.ReactNode }) => {
                 >
                   hello@dopebbq.com
                 </a>
-                <div className="flex space-x-4">
-                  {/* Social Media Icons */}
-                  <a
-                    href="https://instagram.com/dopebbq"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-white transition-colors duration-200"
-                  >
-                    <span className="sr-only">Instagram</span>
-                    {/* Instagram Icon */}
-                  </a>
-                  <a
-                    href="https://twitter.com/dopebbq"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-white transition-colors duration-200"
-                  >
-                    <span className="sr-only">Twitter</span>
-                    {/* Twitter Icon */}
-                  </a>
-                </div>
+                <a
+                  href="https://instagram.com/dopebbq"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors duration-200 block"
+                >
+                  @dopebbq
+                </a>
               </div>
             </div>
           </div>
-
-          {/* Copyright */}
-          <div className="mt-8 border-t border-gray-700 pt-8">
-            <p className="text-center text-gray-300">
-              © {new Date().getFullYear()} Dope BBQ. All rights reserved.
-            </p>
+          <div className="mt-8 pt-8 border-t border-bbq-grey text-center text-gray-400">
+            <p>&copy; {new Date().getFullYear()} Dope BBQ. All rights reserved.</p>
           </div>
         </div>
       </footer>

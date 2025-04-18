@@ -10,23 +10,21 @@ const config: Config = {
     extend: {
       colors: {
         // BBQ Theme Colors
-        'bbq': {
-          red: '#FF4B3E',      // Vibrant BBQ red
-          'red-light': '#FF6B61',
-          'red-dark': '#CC3C32',
-          grey: '#2C2C2C',     // Smoke grey
-          'grey-light': '#4A4A4A',
-          'grey-dark': '#1A1A1A',
-          yellow: '#FFB800',   // Warm yellow
-          'yellow-light': '#FFC833',
-          'yellow-dark': '#CC9300',
-          green: '#2E7D32',    // Fresh green
-          'green-light': '#4CAF50',
-          'green-dark': '#1B5E20',
-          brown: '#795548',    // Earth tone
-          'brown-light': '#8D6E63',
-          'brown-dark': '#5D4037',
-        },
+        'bbq-red': '#FF4B3E',      // Vibrant BBQ red
+        'bbq-red-light': '#FF6B61',
+        'bbq-red-dark': '#CC3C32',
+        'bbq-grey': '#2C2C2C',     // Smoke grey
+        'bbq-grey-light': '#4A4A4A',
+        'bbq-grey-dark': '#1A1A1A',
+        'bbq-yellow': '#FFB800',   // Warm yellow
+        'bbq-yellow-light': '#FFC833',
+        'bbq-yellow-dark': '#CC9300',
+        'bbq-green': '#2E7D32',    // Fresh green
+        'bbq-green-light': '#4CAF50',
+        'bbq-green-dark': '#1B5E20',
+        'bbq-brown': '#795548',    // Earth tone
+        'bbq-brown-light': '#8D6E63',
+        'bbq-brown-dark': '#5D4037',
       },
       fontFamily: {
         // Typography
