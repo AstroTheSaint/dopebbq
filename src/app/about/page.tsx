@@ -20,9 +20,11 @@ const AboutPage = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-20">
           <div className="relative h-96 rounded-lg overflow-hidden">
             <Image
-              src="/images/about/mission.jpg"
+              src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80"
               alt="Dope BBQ Community"
               fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              priority
               className="object-cover"
             />
           </div>
