@@ -1,6 +1,14 @@
-# 🔥 Dope BBQ Website
+# 🔥 Dope BBQ
 
-A modern, engaging website for Dope BBQ - NYC's premier community experience where food, music, and connection collide.
+Welcome to Dope BBQ - Where NYC's Food, Music, and Community Unite! 
+
+[![Website](https://img.shields.io/badge/Website-DOPEBBQ.com-red.svg)](https://dopebbq.com)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
+
+## 🌟 About
+
+Dope BBQ is more than just food - it's a movement that brings together NYC's diverse communities through the universal languages of food, music, and culture. Our platform serves as the digital home for this vibrant community.
 
 ## 🚀 Features
 
@@ -51,8 +59,8 @@ src/
 
 1. **Clone the repository**
    ```bash
-   git clone [repository-url]
-   cd dope-bbq
+   git clone https://github.com/AstroTheSaint/dopebbq.git
+   cd dopebbq
    ```
 
 2. **Install dependencies**
@@ -64,7 +72,14 @@ src/
    ```bash
    cp .env.example .env.local
    ```
-   Fill in the required environment variables.
+   Fill in the required environment variables:
+   ```env
+   NEXT_PUBLIC_SITE_URL=http://localhost:3000
+   NEXT_PUBLIC_GA_ID=your-ga-id
+   CLOUDINARY_CLOUD_NAME=your-cloud-name
+   CLOUDINARY_API_KEY=your-api-key
+   CLOUDINARY_API_SECRET=your-api-secret
+   ```
 
 4. **Run the development server**
    ```bash
@@ -76,27 +91,27 @@ src/
 ## 🎨 Design System
 
 - **Colors**: Earth tones with vibrant pops
-  - BBQ reds
-  - Smoke greys
-  - Warm yellows
-  - Greens
+  - Primary: `#FF4D4D` (BBQ Red)
+  - Secondary: `#2C2C2C` (Smoke Grey)
+  - Accent: `#FFB800` (Warm Yellow)
+  - Success: `#34D399` (Fresh Green)
 
 - **Typography**:
-  - Headlines: Bold, warm fonts (handwritten/organic)
-  - Body: Clean sans-serif
+  - Headlines: "Bebas Neue" - Bold, warm, organic
+  - Body: "Inter" - Clean, modern sans-serif
 
 - **Imagery**: Real moments, authentic captures
   - Motion elements
   - Slow pans
   - Short looping videos
 
-## 📱 Responsive Design
+## �� Responsive Design
 
 The website is fully responsive and optimized for:
-- Mobile devices
-- Tablets
-- Desktop screens
-- Large displays
+- Mobile devices (320px+)
+- Tablets (768px+)
+- Desktop screens (1024px+)
+- Large displays (1440px+)
 
 ## 🔒 Security
 
@@ -104,19 +119,23 @@ The website is fully responsive and optimized for:
 - Secure form handling
 - Protected API routes
 - Regular security audits
+- Data encryption at rest
 
 ## 📈 Performance
 
-- Image optimization
-- Code splitting
-- Lazy loading
-- Performance monitoring
+- Image optimization via Cloudinary
+- Code splitting and lazy loading
+- Server-side rendering
+- Performance monitoring via Vercel Analytics
+- Lighthouse score > 90
 
 ## 🤝 Contributing
 
+We love your input! We want to make contributing to Dope BBQ as easy and transparent as possible. Please see our [CONTRIBUTING.md](CONTRIBUTING.md) for detailed instructions.
+
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+3. Commit your changes (`git commit -m 'feat: Add some AmazingFeature'`)
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
@@ -126,10 +145,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👥 Team
 
-- [Team Member 1] - Lead Developer
-- [Team Member 2] - Designer
-- [Team Member 3] - Content Strategist
+- **Johnny Rapp** - Founder & Lead Developer
+- **Design Team** - UI/UX Excellence
+- **Content Team** - Storytelling & Engagement
 
 ## 📞 Contact
 
-For any inquiries, please reach out to [contact@dopebbq.com](mailto:contact@dopebbq.com) 
+- **General Inquiries**: [hello@dopebbq.com](mailto:hello@dopebbq.com)
+- **Partnership Opportunities**: [partners@dopebbq.com](mailto:partners@dopebbq.com)
+- **Technical Support**: [support@dopebbq.com](mailto:support@dopebbq.com)
+
+---
+
+Made with ❤️ in NYC by the Dope BBQ team 
