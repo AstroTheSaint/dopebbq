@@ -1,4 +1,4 @@
-# 🌐 Dope BBQ Website
+# 🔥 Dope BBQ Website
 
 A modern, engaging website for Dope BBQ - NYC's premier community experience where food, music, and connection collide.
 
@@ -13,6 +13,7 @@ A modern, engaging website for Dope BBQ - NYC's premier community experience whe
 - **Testimonials**: Social proof showcasing real community experiences
 - **About/Mission**: Soulful storytelling of the Dope BBQ journey
 - **Press Highlights**: Showcasing media coverage and partnerships
+- **Contact Form**: Easy way for vendors and sponsors to get in touch
 
 ## 🛠 Tech Stack
 
